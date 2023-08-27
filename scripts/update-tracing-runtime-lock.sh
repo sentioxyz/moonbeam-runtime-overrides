@@ -11,6 +11,6 @@ echo "Running 'cargo fetch' to update the lock file"
 
 echo
 cargo fetch
-echo 
+echo
 
 cd ../..

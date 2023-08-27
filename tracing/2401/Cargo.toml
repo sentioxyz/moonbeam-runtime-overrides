@@ -8,7 +8,7 @@ resolver = "2"
 
 [workspace.package]
 authors = ["PureStake"]
-repository = "https://github.com/PureStake/moonbeam"
+repository = "https://github.com/sentioxyz/moonbeam"
 
 [workspace.dependencies]
 # Dependencies are split into 2 groups: wasm and client.
@@ -18,54 +18,54 @@ repository = "https://github.com/PureStake/moonbeam"
 # - "client" dependencies are only used in the client, and thus don't need to be no_std compatible.
 
 # Moonbeam (wasm)
-account = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
+account = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
 evm-tracing-events = { path = "shared/primitives/rpc/evm-tracing-events", default-features = false , features = ["runtime-1600"] }
-moonbeam-core-primitives = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
+moonbeam-core-primitives = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
 moonbeam-primitives-ext = { path = "shared/primitives/ext", default-features = false }
 moonbeam-rpc-primitives-debug = { path = "shared/primitives/rpc/debug", default-features = false }
-moonbeam-rpc-primitives-txpool = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
+moonbeam-rpc-primitives-txpool = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
 
 moonbeam-evm-tracer = { path = "shared/runtime/evm_tracer", default-features = false }
-moonbeam-relay-encoder = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
+moonbeam-relay-encoder = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
 moonbeam-runtime-common = { path = "runtime/common", default-features = false }
 
-moonbeam-xcm-benchmarks = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-asset-manager = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-author-mapping = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-erc20-xcm-bridge = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-ethereum-chain-id = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-ethereum-xcm = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
+moonbeam-xcm-benchmarks = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-asset-manager = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-author-mapping = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-erc20-xcm-bridge = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-ethereum-chain-id = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-ethereum-xcm = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
 
-pallet-evm-precompile-author-mapping = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-balances-erc20 = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-batch = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-call-permit = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-collective = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-conviction-voting = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-crowdloan-rewards = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-democracy = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-gmp = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-parachain-staking = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-preimage = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-proxy = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-randomness = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-referenda = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-registry = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-relay-encoder = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-xcm-transactor = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-xcm-utils = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompile-xtokens = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-evm-precompileset-assets-erc20 = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-maintenance-mode = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-migrations = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-moonbeam-orbiters = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-parachain-staking = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-proxy-genesis-companion = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-randomness = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-pallet-xcm-transactor = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-precompile-utils = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-session-keys-primitives = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
-xcm-primitives = { default-features = false , git = "https://github.com/PureStake/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-author-mapping = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-balances-erc20 = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-batch = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-call-permit = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-collective = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-conviction-voting = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-crowdloan-rewards = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-democracy = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-gmp = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-parachain-staking = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-preimage = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-proxy = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-randomness = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-referenda = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-registry = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-relay-encoder = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-xcm-transactor = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-xcm-utils = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompile-xtokens = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-evm-precompileset-assets-erc20 = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-maintenance-mode = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-migrations = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-moonbeam-orbiters = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-parachain-staking = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-proxy-genesis-companion = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-randomness = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+pallet-xcm-transactor = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+precompile-utils = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+session-keys-primitives = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
+xcm-primitives = { default-features = false , git = "https://github.com/sentioxyz/moonbeam", rev = "runtime-2401" }
 
 pallet-crowdloan-rewards = { git = "https://github.com/purestake/crowdloan-rewards", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
 
@@ -134,33 +134,33 @@ ethereum-types = { version = "0.14", default-features = false }
 evm = { git = "https://github.com/purestake/evm", branch = "tgm-record-external-cost", default-features = false }
 evm-gasometer = { git = "https://github.com/purestake/evm", branch = "tgm-record-external-cost", default-features = false }
 evm-runtime = { git = "https://github.com/purestake/evm", branch = "tgm-record-external-cost", default-features = false }
-fp-ethereum = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
-fp-evm = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
-fp-rpc = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
-fp-self-contained = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
-pallet-base-fee = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
-pallet-ethereum = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+fp-ethereum = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
+fp-evm = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
+fp-rpc = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
+fp-self-contained = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
+pallet-base-fee = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
+pallet-ethereum = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"forbid-evm-reentrancy",
 	"evm-with-weight-limit",
 ] }
-pallet-evm = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+pallet-evm = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"forbid-evm-reentrancy",
 	"evm-with-weight-limit",
 ] }
-pallet-evm-precompile-blake2 = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+pallet-evm-precompile-blake2 = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"evm-with-weight-limit",
 ] }
-pallet-evm-precompile-bn128 = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+pallet-evm-precompile-bn128 = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"evm-with-weight-limit",
 ] }
-pallet-evm-precompile-dispatch = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+pallet-evm-precompile-dispatch = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"evm-with-weight-limit",
 ] }
-pallet-evm-precompile-modexp = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+pallet-evm-precompile-modexp = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"evm-with-weight-limit",
 ] }
-pallet-evm-precompile-sha3fips = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
-pallet-evm-precompile-simple = { git = "https://github.com/purestake/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
+pallet-evm-precompile-sha3fips = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false }
+pallet-evm-precompile-simple = { git = "https://github.com/sentioxyz/frontier", branch = "moonbeam-polkadot-v0.9.40", default-features = false, features = [
 	"evm-with-weight-limit",
 ] }
 
